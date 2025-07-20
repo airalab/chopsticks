@@ -3,7 +3,9 @@
 Make sure you have setup Rust environment (>= 1.64).
 
 - Clone repository with submodules ([smoldot](https://github.com/paritytech/smoldot))
-  - `git clone --recurse-submodules https://github.com/AcalaNetwork/chopsticks.git && cd chopsticks`
+  - `git clone --recurse-submodules https://github.com/airalab/chopsticks.git && cd chopsticks`
+- Move to `robonomics` branch
+  - `git checkout robonomics`
 - Install deps
   - `yarn`
 - Build project. Please do not use IDE's built-in tools to build wasm.
