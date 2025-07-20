@@ -1,0 +1,18 @@
+endpoint: wss://polkadot.rpc.robonomics.network/ws
+mock-signature-host: true
+# block: ${env.ROBODOT_BLOCK_NUMBER}
+db: ./db_robodot.sqlite
+runtime-log-level: 5
+
+import-storage:
+  System:
+    Account:
+      -
+        -
+          - "4Gb3m5xYmkLFC1x8HnjsDtHwkG9YJWtqyZQv1pQGkYWwCv34"
+        - providers: 1
+          data:
+            free: "1000000000000000"
+  TechnicalCommittee:
+    Members:
+      - 4Gb3m5xYmkLFC1x8HnjsDtHwkG9YJWtqyZQv1pQGkYWwCv34
